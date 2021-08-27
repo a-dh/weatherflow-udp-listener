@@ -14,7 +14,7 @@ The commands below should be run as root (or via sudo).
 * Install the files into the usual places
 ```
 cp etc/default/weatherflow-udp-listener /etc/default/weatherflow-udp-listener
-cp lib/systemd/system/weatherflow-udp-listener.service /lib/systemd/service/weatherflow-udp-listener.service
+cp lib/systemd/system/weatherflow-udp-listener.service /etc/systemd/system/weatherflow-udp-listener.service
 cp listen.py /usr/local/bin/listen.py
 chmod 755 /usr/local/bin/listen.py
 ```
