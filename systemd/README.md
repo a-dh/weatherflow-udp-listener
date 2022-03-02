@@ -11,6 +11,12 @@ As distributed, the service will run as the non-privileged user=pi group=pi.  Ed
 
 The commands below should be run as root (or via sudo).
 
+* Create a system user to run the service
+
+```
+useradd --system --comment "system user for weatherflow listener" --create-home --create-home --shell /bin/false wflistener 
+```
+
 * Install the files into the usual places
 ```
 cp etc/default/weatherflow-udp-listener /etc/default/weatherflow-udp-listener
